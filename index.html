@@ -217,10 +217,8 @@ select.fi2{-webkit-appearance:none;appearance:none;background:var(--blanco) url(
 </div>
 
 <script>
-// 🔧 CONFIG: Cambiá esta URL si el backend está en otro lado
-const API_URL = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
-  ? window.location.origin
-  : "https://mallu-coach.onrender.com";
+// 🔧 API URL - same domain (Vercel serves both frontend & backend)
+const API_URL = window.location.origin;
 
 const DOW=['LUN','MAR','MIÉ','JUE','VIE','SÁB','DOM'];
 const DNUM=['11','12','13','14','15','16','17'];
